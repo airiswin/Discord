@@ -34,8 +34,8 @@ client.on('ready', async () => {
     .setAssetsLargeText('ris') //Text when you hover the Large image
     .setAssetsSmallImage('https://cdn.discordapp.com/emojis/1191505419764510801.gif?size=80&quality=lossless') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('legit shop') //Text when you hover the Small image
-    .addButton('Shop', ' https://discord.gg/RpEWErbuKZ')
-    .addButton('Vouches', 'https://discord.com/channels/916601738499342346/1096722271311241216');
+    .addButton('Shop', ' https://discord.gg/54ZJSPztBR')
+    .addButton('Vouches', 'https://discord.gg/vjrqZbdszc');
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "idle" }); //dnd, online, idle, offline
