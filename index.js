@@ -23,28 +23,28 @@ client.on('ready', async () => {
   console.log(`${client.user.tag} - rich presence started!`);
 
   const r = new Discord.RichPresence()
-    .setApplicationId('')
+    .setApplicationId('1200448965259300874')
     .setType('STREAMING')
-    .setURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ') //Must be a youtube video link 
-    .setState('Recording')
-    .setName('')
+    .setURL('https://www.youtube.com/watch?v=oIYWenB637c&list=RDnGKFgidwsTM&index=7') //Must be a youtube video link 
+    .setState('Playing')
+    .setName('discounted nitro, prems & game creds')
     .setDetails(`Valorant [${formatTime()}]`)
     .setStartTimestamp(Date.now())
- .setAssetsLargeImage('') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('Boring') //Text when you hover the Large image
-    .setAssetsSmallImage('') //You can put links in tenor or discord and etc.
-    .setAssetsSmallText('Twitch') //Text when you hover the Small image
-    .addButton('Watch', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ')
-    .addButton('Donate', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+ .setAssetsLargeImage('https://cdn.discordapp.com/attachments/1201099754583633971/1212550126531514420/7d9dd0378bf3a742bf6779c992663809.jpg?ex=65f23e4e&is=65dfc94e&hm=3c22017094ab00dc99318bc262a335971ccdb81e6db6f1ae1bbdb61ba22f9fff&') //You can put links in tenor or discord and etc.
+    .setAssetsLargeText('ris') //Text when you hover the Large image
+    .setAssetsSmallImage('https://cdn.discordapp.com/emojis/1191505419764510801.gif?size=80&quality=lossless') //You can put links in tenor or discord and etc.
+    .setAssetsSmallText('legit shop') //Text when you hover the Small image
+    .addButton('Shop', ' https://discord.gg/RpEWErbuKZ')
+    .addButton('Vouches', 'https://discord.com/channels/916601738499342346/1096722271311241216');
 
   client.user.setActivity(r);
-  client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
+  client.user.setPresence({ status: "idle" }); //dnd, online, idle, offline
 
   let prevTime = null;
   setInterval(() => {
     const newTime = formatTime();
     if (newTime !== prevTime) {
-      const newDetails = ` [${newTime}]`;
+      const newDetails = ` airis`;
       r.setDetails(newDetails);
       client.user.setActivity(r);
       prevTime = newTime;
